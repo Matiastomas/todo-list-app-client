@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -39,6 +40,7 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
         mListView = (ListView) findViewById(R.id.tasklist);
         button = (Button) findViewById(R.id.addtask);
+        output = (TextView) findViewById(R.id.textView1);
         displayTask();
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +48,16 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent (HomeScreen.this, AddTask.class);
+                startActivity(intent);
+            }
+        });
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String selectedItem = (String) parent.getItemAtPosition(position);
+
+                Intent intent = new Intent (HomeScreen.this, DeleteTask.class);
+                intent.putExtra("taskValue", selectedItem);
                 startActivity(intent);
             }
         });
