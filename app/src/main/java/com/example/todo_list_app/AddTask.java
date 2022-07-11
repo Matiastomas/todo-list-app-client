@@ -34,7 +34,6 @@ public class AddTask extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
         editText = (EditText) findViewById(R.id.taskname);
-        editText2 = (EditText) findViewById(R.id.taskoutput);
         button = (Button) findViewById(R.id.savebtn);
         //Edittext + button - get valua from edit text, save and send to server
         //Execute Save onClick Save saveTask() and move back to home screen;

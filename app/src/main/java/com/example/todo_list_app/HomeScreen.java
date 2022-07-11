@@ -40,7 +40,6 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
         mListView = (ListView) findViewById(R.id.tasklist);
         button = (Button) findViewById(R.id.addtask);
-        output = (TextView) findViewById(R.id.textView1);
         displayTask();
 
         button.setOnClickListener(new View.OnClickListener() {

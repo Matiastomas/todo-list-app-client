@@ -41,6 +41,8 @@ public class DeleteTask extends AppCompatActivity {
 
                String getEditTextValue = editText.getText().toString();
               deleteTask(getEditTextValue);
+               Intent intent = new Intent (DeleteTask.this,  HomeScreen.class);
+               startActivity(intent);
            }
        });
 
