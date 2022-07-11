@@ -6,14 +6,16 @@
     android:paddingRight="20dp"
     android:orientation="vertical" >
 
+
     <EditText
         android:id="@+id/updatetask"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="0pt"
+        android:layout_width="376dp"
         android:layout_weight="1"
         android:gravity="top"
-        android:hint="Add task name" />
-
+        android:hint="Add task name"
+        android:minHeight="1dp"
+        android:padding="12dp" />
 
     <Button
         android:layout_width="100dp"
