@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -31,15 +32,15 @@ public class HomeScreen extends AppCompatActivity {
     private ListView mListView;
     private Button button;
     private TextView output;
+    private ScrollView scrollView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         mListView = (ListView) findViewById(R.id.tasklist);
         button = (Button) findViewById(R.id.addtask);
-
-        output = (TextView) findViewById(R.id.output);
         displayTask();
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
