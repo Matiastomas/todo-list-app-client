@@ -1,6 +1,8 @@
 # **About**
 
-An android to do list app that was done as part of my mobile application development course at uni
+An android to do list app that was done as part of my mobile application development course at university
+The android app  serve as client that send and receive  data to/from a php backend, meaning all the tasks
+created by the user are saved, deleted on the server-side running a php code...
 
 # **Home Screen** 
 
