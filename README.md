@@ -1,8 +1,8 @@
-#**About **
+#**About**
 
 An android to do list app that was done as part of my mobile application development course at uni
 
-#**Home Screen#** 
+#**Home Screen** 
 
 ![9fcc273a-f612-4d6c-831c-82b86ec68c08 (1)](https://user-images.githubusercontent.com/16385746/179100983-f3b76c87-a43a-4b21-81cc-c9c26df336d9.png)
 
